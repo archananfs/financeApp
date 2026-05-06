@@ -66,11 +66,11 @@ ui <- page_navbar(
         card_body(
           div(class = "row g-2 align-items-end",
             div(class = "col-auto",
-              selectInput("dash_month", "Month", choices = NULL, width = "180px")
+              selectInput("dash_month", "Month", choices = NULL, width = "180px", selectize = FALSE)
             ),
             div(class = "col-auto",
               selectInput("dash_category", "Category",
-                choices = c("All categories" = "all", CATEGORIES), width = "180px")
+                choices = c("All categories" = "all", CATEGORIES), width = "180px", selectize = FALSE)
             ),
             div(class = "col-auto",
               actionButton("refresh_dash", "Refresh", class = "btn btn-outline-secondary btn-sm mt-1",
